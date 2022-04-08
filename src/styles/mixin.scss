@@ -1,0 +1,19 @@
+// Смартфоны
+@mixin screen-xs {
+  @media (min-width: 320px) { @content; }
+}
+
+// Планшеты в вертикальном режиме
+@mixin screen-s {
+  @media (max-width: 720px) { @content; }
+}
+
+// Планшеты в горизонтальном режиме
+@mixin screen-m {
+  @media (max-width: 940px) { @content; }
+}
+
+// Ноутбуки
+@mixin screen-l {
+  @media (max-width: 1080px) { @content; }
+}
